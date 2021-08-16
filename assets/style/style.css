@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bgr:#f9f4ec;
+    --ttl: #000000;
+    --text: #3b3b3b;
+    --orange: #fabea1;
+    --blue: #c2dddf;
+    --yellow: #f8e177;
+    --progress-bgr: #e0dcd4;
+}
+
+@font-face {
+    font-family: 'vremya';
+    src: url(../fonts/vremya.ttf);
+}
+
+body {
+    background-color: var(--bgr);
+    padding-bottom: 40px;
+}
+
+.text {
+    color: var(--text);
+}
+
+.ttl {
+    font-family: 'vremya';
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.blue {
+    background-color: var(--blue);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.progress {
+    margin: 0 16px;
+    border-radius: 6px;
+    background-color: var(--progress-bgr);
+}
+
+img {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .main-grid {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .main-grid {
+        display: grid;
+        grid-template-columns: repeat(16, minmax(0, 1fr));
+        max-width: 1360px;
+        align-items: self-start;
+        margin: 0 40px;
+    }
+    .col-3 {
+        grid-column: span 3;
+        padding-right: 19px;
+        border-right: 1px solid rgb(229, 231, 235);
+        padding-bottom: 20px;
+    }
+    .col-4-1 {
+        grid-column: span 4;
+        padding: 0 18px;
+        border-left: 1px solid rgb(229, 231, 235);
+        border-right: 1px solid rgb(229, 231, 235);
+    }
+    .col-4-2 {
+        grid-column: span 4;
+        margin-left: 20px;
+    }
+    .col-5 {
+        grid-column: span 5;
+        padding: 0 20px 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main-head {
+        max-width: 1360px;
+        margin: 40px auto !important;
+    }
+    .main-grid {
+        margin: 0 auto;
+    }
+}

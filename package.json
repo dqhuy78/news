@@ -1,0 +1,21 @@
+{
+  "name": "news",
+  "homepage": "https://github.com/dqhuy78/news",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "dqhuy78",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "gh-pages": "^3.2.3",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7",
+    "vite": "^2.5.0"
+  }
+}
